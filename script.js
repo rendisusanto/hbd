@@ -12,12 +12,12 @@ function login() {
   
   function logout() {
     sessionStorage.removeItem('loggedIn');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
   }
   
   function startPage() {
     if (sessionStorage.getItem('loggedIn') !== 'true') {
-      window.location.href = 'login.html';
+      window.location.href = 'index.html';
     }
     startMusic();
     startFireworks();
