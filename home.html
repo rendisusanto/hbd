@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selamat Ulang Tahun Zahrotussyita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page" onload="startPage()">
+
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <h2>Selamat Datang!</h2>
+      <p>Semoga Zahroo selalu bahagia! 🎉</p>
+      <button onclick="closeModal()">Oke!</button>
+    </div>
+  </div>
+
+  <div class="top-buttons">
+    <button onclick="logout()" class="logout-button">Logout</button>
+    <button onclick="toggleTheme()" class="theme-button">Ganti Tema</button>
+    <button onclick="toggleMusic()" class="music-button">Play/Pause Musik</button>
+  </div>
+
+  <div class="header">
+    <h1>Selamat Ulang Tahun, Zahrotussyita Suci Wulandari! 🎂</h1>
+    <p>Semoga hari-harimu selalu penuh cinta dan tawa! 🎈</p>
+  </div>
+
+  <div class="gallery">
+    <h2>Galeri Kenangan</h2>
+    <div id="galleryContainer" class="gallery-container">
+      <!-- gambar akan di load otomatis -->
+      
+    </div>
+    <div class="quotes-section">
+        <h2>Quotes Spesial 🎀</h2>
+        <p id="quoteText">Sedang memuat kata-kata indah...</p>
+        <button onclick="generateQuote()">Ganti Quotes</button>
+      </div>
+
+
+
+
+<!-- Amplop Section -->
+<div class="envelope-section">
+  <div class="envelope" onclick="openEnvelope(1)">
+    <div class="flap"></div>
+    <div class="body"></div>
+    <p>Buka Amplop 1</p>
+  </div>
+  <div class="envelope" onclick="openEnvelope(2)">
+    <div class="flap"></div>
+    <div class="body"></div>
+    <p>Buka Amplop 2</p>
+  </div>
+</div>
+
+<!-- Modal untuk Pesan -->
+<div id="messageModal" class="message-modal">
+  <div class="message-content">
+    <h2>Pesan Rahasia</h2>
+    <p id="messageText">Pesan untuk amplop 1</p>
+    <button onclick="closeMessage()">Tutup</button>
+  </div>
+</div>
+
+  
+
+
+
+
+  </div>
+
+  <audio id="backgroundMusic" src="audio/1.mp3" loop></audio>
+
+  <!-- Canvas untuk Fireworks -->
+  <canvas id="fireworksCanvas"></canvas>
+
+  <!-- Modal untuk zoom gambar -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightboxImg" src="">
+  </div>
+
+  <script src="script.js"></script>
+  <script src="js/fireworks.js"></script>
+  <script src="js/lightbox.js"></script>
+
+</body>
+</html>
